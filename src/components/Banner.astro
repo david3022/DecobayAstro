@@ -1,0 +1,133 @@
+---
+import BannerImg from "../assets/banner.png";
+---
+
+<section class="banner" style={`background-image: url(${BannerImg.src});`}>
+  <div class="overlay"></div>
+
+  <section class="content">
+    <div class="title">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">
+        Transforming spaces,
+      </h1>
+    </div>
+    <div class="title">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">
+        Creating Experiences
+      </h1>
+    </div>
+
+    <div class="subtitle">
+      <p class="text-lg md:text-xl max-w-2xl">
+        Discover the perfect blend of innovation and design. Join us on a
+        journey to create exceptional digital experiences.
+      </p>
+    </div>
+
+    <div class="buttons flex flex-col md:flex-row gap-4 mt-8">
+      <div class="buttona">
+        <a href="http://">
+          <h2>Start your Project</h2>
+          <h2>​➞​</h2>
+        </a>
+      </div>
+
+      <div class="buttonb">
+        <a href="http://">
+          <h2>View our Work</h2>
+          
+        </a>
+      </div>
+    </div>
+
+
+  </section>
+</section>
+
+<style>
+  .banner {
+    
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinea el contenido horizontalmente a la izquierda */
+    color: white;
+    overflow: hidden;
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+  .content {
+    margin-left: 60px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea verticalmente a la izquierda */
+    text-align: left;
+    gap: 1rem;
+    padding: 0 2rem;
+    max-width: 800px;
+  }
+
+ 
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+  .buttona {
+    background-color:rgb(246, 182, 62);
+    color: white;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    width: 160px;
+    height: 70px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+
+  .buttona:hover {
+    background-color: orange;
+    transform: scale(1.05);
+  }
+
+
+
+  .buttonb {
+    background-color: gray;
+    color: white;
+    padding: 6px 12px;
+    border: 2px solid white;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    width: 160px;
+    height: 70px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .buttonb:hover {
+    background-color: #4b4b4b;
+  }
+</style>

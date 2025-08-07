@@ -1,0 +1,51 @@
+---
+
+import Project from "../assets/Project.jpg";
+import Project0 from "../assets/Project0.jpg";
+import Project1 from "../assets/Project1.jpeg";
+import Project2 from "../assets/Project2.jpeg";
+---
+<style>
+
+    .card {
+  overflow: hidden;
+}
+
+.card img {
+  transition: transform 0.3s ease;
+}
+
+    .card:hover img{
+        transform: scale(1.1);
+    }
+</style>
+
+
+<h1 class="text-4xl font-bold text-center  mb-12 animate-fade-in">Projects</h1>
+
+
+<section class="projects grid grid-cols-1 sm:grid-cols-2 gap-6 p-4">
+  <div class="card rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+    <a href="./">
+      <img src={Project.src} alt="project" class="w-full h-auto object-cover">
+    </a>
+  </div>
+
+  <div class="card rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+    <a href="http://">
+      <img src={Project0.src} alt="project" class="w-full h-auto object-cover">
+    </a>
+  </div>
+
+  <div class="card rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+    <a href="http://">
+      <img src={Project1.src} alt="project" class="w-full h-auto object-cover">
+    </a>
+  </div>
+
+  <div class="card rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+    <a href="http://">
+      <img src={Project2.src} alt="project" class="w-full h-auto object-cover">
+    </a>
+  </div>
+</section>
